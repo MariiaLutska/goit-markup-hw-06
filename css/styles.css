@@ -736,7 +736,8 @@ img {
     background-size: contain;
     padding-left: 29px;
     padding-right: 28px;
-    padding: top 10px, bottom 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     outline: none;
 
     transition-property: background-color;
