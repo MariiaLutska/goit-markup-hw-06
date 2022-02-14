@@ -736,14 +736,12 @@ img {
     background-size: contain;
     padding-left: 29px;
     padding-right: 28px;
-    padding: top 10px;
-    bottom: 10px;
+    padding: top 10px, bottom 10px;
 }
 
 
 .icon-send {
-    width: 24px;
-    height: 24px;
+    margin-left: 10px;
 }
 
 
