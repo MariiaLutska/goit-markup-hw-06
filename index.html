@@ -337,10 +337,10 @@
             <div class="mailing-list">
                 <p class="mailing-list-title">Подпишитесь на рассылку</p>
                 <form class="form">
-                    <label for="email" class="form-email">
-                        <input type="email" name="email" placeholder="Email">
+                    <label class="form-email">
+                        <input type="email" name="email" class="form-email" placeholder="Email">
                     </label>
-                    <button type="submit" class="btn-mailing icon-send">Подписаться
+                    <button type="submit" class="btn-mailing">Подписаться
                         <svg class="icon-send">
                             <use href="./images/iconsend.svg#icon-icon-send" width="24px" height="24px"></use>
                         </svg>
@@ -379,7 +379,7 @@
                 <div class="form-field">
                 <label for="user-mail" class="modal-label">Почта</label>
                 <div class="modal-input-wrap">
-                <input type="mail" name="user-mail" class="modal-input" id="user-mail" />
+                <input type="email" name="user-mail" class="modal-input" id="user-mail" />
                 <svg class="modal-icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-email"></use>
                 </svg>
@@ -387,13 +387,15 @@
                 </div>
                 <div class="form-field">
                 <label for="user-text" class="modal-label">Комментарий</label>
-                <textarea name="user-text" id="user-text" class="modal-text" placeholder="Введите текст"></textarea>
+                <div class="modal-input-wrap">
+                <textarea name="user-text" class="modal-text" id="user-text" placeholder="Введите текст"></textarea>
+                </div>
                 </div>
                 <div class="form-field">
                 <input type="checkbox" name="modal-check" class="modal-check visually-hidden" id="modal-check"/>
-                <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                <label for="modal-check" class="modal-check-text">Соглашаюсь с рассылкой и принимаю <span class="modal-document">Условия договора</span></label>
                 </div>
-                <button type="submit">Отправить</button>
+                <button type="submit" class="btn-modal-submit">Отправить</button>
             </form>
         </div> 
     </div>
