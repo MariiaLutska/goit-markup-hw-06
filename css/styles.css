@@ -642,7 +642,7 @@ img {
 
 .footer-join {
     color: var(--footer-contacts-color);
-    margin-right: 93px;
+    margin-right: auto;
 }
 
 .join-item {
@@ -738,7 +738,6 @@ img {
     padding-right: 28px;
     padding-top: 10px;
     padding-bottom: 10px;
-    outline: none;
 
     transition-property: background-color;
     transition-duration: var(--duration);
@@ -933,7 +932,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     transition: transform var(--duration);
-    padding: 40px;
+    padding: 40px 39px 40px 41px;
 }
 
 .modal-title {
@@ -969,12 +968,12 @@ img {
     transition-property: border-color, fill;
     transition-duration: var(--duration);
     transition-timing-function: var(--cubic);
+    /* margin-bottom: 10px; */
 
 }
 
 .modal-input:focus {
     border-color: var(--accent-color);
-    outline: none;
 }
 
 .modal-input:focus+.modal-icon {
@@ -993,6 +992,11 @@ img {
     color: var(--title-color);
 }
 
+.btn-modal-icon:hover,
+.btn-modal-icon:focus {
+    color: var(--accent-color);
+}
+
 .btn-modal {
     width: 30px;
     height: 30px;
@@ -1003,7 +1007,13 @@ img {
     position: absolute;
     right: 8px;
     top: 8px;
-    outline: none;
+    color: var(--title-color);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+    color: var(--accent-color);
+
 }
 
 .modal-label {
@@ -1029,7 +1039,6 @@ img {
     border-radius: 4px;
     padding: 12px 16px;
     resize: none;
-    outline: none;
     transition-property: border-color;
     transition-duration: var(--duration);
     transition-timing-function: var(--cubic);
@@ -1037,6 +1046,14 @@ img {
 
 .modal-text:focus {
     border-color: var(--accent-color);
+}
+
+.form-user-text {
+    margin-bottom: 20px;
+}
+
+.form-modal-check {
+    margin-bottom: 30px;
 }
 
 .modal-check-text {
@@ -1048,13 +1065,14 @@ img {
     color: var(--main-text-color);
     display: flex;
     align-items: center;
+    justify-content: center;
 
 }
 
 .modal-check-text::before {
     content: "";
-    width: 16px;
-    height: 15px;
+    width: 12px;
+    height: 11px;
     border: 2px solid var(--header-text-color);
     border-radius: 2px;
     display: block;
@@ -1070,8 +1088,7 @@ img {
 
 .modal-document {
     color: var(--accent-color);
-    margin-left: 2px;
-    text-decoration: underline;
+    margin-left: 3px;
 }
 
 .btn-modal-submit {
@@ -1101,7 +1118,6 @@ img {
 
 .btn-modal-submit:focus {
     background-color: var(--focus-button-color);
-    outline: none;
 }
 
 
