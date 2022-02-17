@@ -1008,6 +1008,9 @@ img {
     right: 8px;
     top: 8px;
     color: var(--title-color);
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .btn-modal:hover,
@@ -1077,12 +1080,17 @@ img {
     border-radius: 2px;
     display: block;
     margin-right: 7px;
+    cursor: pointer;
 }
 
 .modal-check:checked+.modal-check-text::before {
     background-image: url(../images/iconcheck.svg);
     background-origin: border-box;
     background-size: contain;
+    border-color: var(--accent-color);
+}
+
+.modal-check:focus+.modal-check-text::before {
     border-color: var(--accent-color);
 }
 
