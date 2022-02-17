@@ -1083,6 +1083,10 @@ img {
     cursor: pointer;
 }
 
+.modal-check:focus+.modal-check-text::before {
+    border-color: var(--accent-color);
+}
+
 .modal-check:checked+.modal-check-text::before {
     background-image: url(../images/iconcheck.svg);
     background-origin: border-box;
@@ -1090,9 +1094,7 @@ img {
     border-color: var(--accent-color);
 }
 
-.modal-check:focus+.modal-check-text::before {
-    border-color: var(--accent-color);
-}
+
 
 .modal-document {
     color: var(--accent-color);
